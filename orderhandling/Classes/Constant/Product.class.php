@@ -1,0 +1,35 @@
+<?php
+
+namespace orderhandling\Classes\Constant;
+
+class Product
+{
+    CONST INVOICE_RESPONSE_EMAIL = 'email';
+    CONST INVOICE_RESPONSE_JSON = 'json';
+
+    CONST INOVICE_FORMAT_JSON = 'json';
+    CONST INOVICE_FORMAT_HTML = 'html';
+
+    CONST MINIMUM_INVOICE_SUM = 200;
+    CONST MINIMUM_INVOICE_SUM_MESSAGE = 'Added 10{currency} extra';
+
+    CONST ERROR_CODE_PREFIX = 'ERROR_CODE_';
+
+    CONST ERROR_CODE_GENERAL = 1000;
+    CONST ERROR_CODE_PRODUCTS = 1100;
+    CONST ERROR_CODE_COUNTRY = 1200;
+    CONST ERROR_CODE_INVOICE_FORMAT = 1300;
+    CONST ERROR_CODE_RETURN_TYPE = 1400;
+    CONST ERROR_CODE_EMAIL = 1500;
+    CONST ERROR_CODE_EMAIL_SEND_FAILED = 1501;
+    CONST ERROR_CODE_NO_PRODUCT_FOUND = 1600;
+
+    CONST ERROR_CODE_GENERAL_MESSAGE = 'data may not be valid';
+    CONST ERROR_CODE_PRODUCTS_MESSAGE = 'product_list not found or INVALID type';
+    CONST ERROR_CODE_COUNTRY_MESSAGE = 'country_code not found or INVALID type';
+    CONST ERROR_CODE_INVOICE_FORMAT_MESSAGE = 'invoice_format not found or INVALID type';
+    CONST ERROR_CODE_RETURN_TYPE_MESSAGE = 'return_type not found or INVALID type';
+    CONST ERROR_CODE_EMAIL_MESSAGE = 'Email either empty or invalid';
+    CONST ERROR_CODE_EMAIL_SEND_FAILED_MESSAGE = 'Email sending failed';
+    CONST ERROR_CODE_NO_PRODUCT_FOUND_MESSAGE = 'No product found';
+}
